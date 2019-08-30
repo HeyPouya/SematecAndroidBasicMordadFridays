@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SematecAndroidBasicMordadFridays</string>
+    <string name="my_button">My Button</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="please_enter_your_family">Please enter your family</string>
+    <string name="ok">Ok</string>
 </resources>
