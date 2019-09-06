@@ -9,25 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestRecyclerActivity">
+        <activity android:name=".TestAsyncHttpClientActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".TestDrawerActivity">
+        <activity android:name=".TestURLConnectionActivity">
         </activity>
-        <activity android:name=".TestSharedPrefrencesActivity"></activity>
+        <activity android:name=".TestThreadActivity"></activity>
+        <activity android:name=".TestRecyclerActivity" />
+        <activity android:name=".TestDrawerActivity" />
+        <activity android:name=".TestSharedPrefrencesActivity" />
         <activity android:name=".TestImplicitActivity" />
         <activity android:name=".TestActivityForResultDestination" />
         <activity android:name=".TestActivityForResult" />
         <activity android:name=".TestNewActivity" />
         <activity android:name=".MainActivity" />
     </application>
-
     <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
