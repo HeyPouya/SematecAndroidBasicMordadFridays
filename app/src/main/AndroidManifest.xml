@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestAsyncHttpClientActivity">
+        <activity android:name=".TestAlertDialogActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -17,9 +17,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TestURLConnectionActivity">
+        <activity android:name=".TestVideoViewActivity"></activity>
+        <activity android:name=".TestSQLiteActivity">
         </activity>
-        <activity android:name=".TestThreadActivity"></activity>
+        <activity android:name=".TestHTMLActivity" />
+        <activity android:name=".TestAsyncHttpClientActivity" />
+        <activity android:name=".TestURLConnectionActivity" />
+        <activity android:name=".TestThreadActivity" />
         <activity android:name=".TestRecyclerActivity" />
         <activity android:name=".TestDrawerActivity" />
         <activity android:name=".TestSharedPrefrencesActivity" />
