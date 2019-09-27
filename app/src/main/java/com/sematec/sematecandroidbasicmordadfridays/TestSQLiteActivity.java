@@ -12,7 +12,7 @@ public class TestSQLiteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_sqlite);
 
-        TestSQLiteHelper helper = new TestSQLiteHelper(TestSQLiteActivity.this, "sematecdb", null, 2);
+        TestSQLiteHelper helper = new TestSQLiteHelper(TestSQLiteActivity.this, "sematecdb", null, 3);
 
 
         helper.insertStudent("Pouya", "Heydari", 90);

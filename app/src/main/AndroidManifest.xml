@@ -9,17 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestAlertDialogActivity">
+        <activity android:name=".TestShapeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".TestVideoViewActivity"></activity>
-        <activity android:name=".TestSQLiteActivity">
+        <activity android:name=".TestWebViewActivity">
         </activity>
+        <activity android:name=".TestShowDialogActivity"></activity>
+        <activity
+            android:name=".TestDialogActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name=".TestHandlerActivity" />
+        <activity android:name=".TestKebabMenuActivity" />
+        <activity android:name=".TestBroadcastActivity" />
+        <activity android:name=".TestPermissionActivity" />
+        <activity android:name=".TestAlertDialogActivity" />
+        <activity android:name=".TestVideoViewActivity" />
+        <activity android:name=".TestSQLiteActivity" />
         <activity android:name=".TestHTMLActivity" />
         <activity android:name=".TestAsyncHttpClientActivity" />
         <activity android:name=".TestURLConnectionActivity" />
@@ -32,6 +43,12 @@
         <activity android:name=".TestActivityForResult" />
         <activity android:name=".TestNewActivity" />
         <activity android:name=".MainActivity" />
+
+        <receiver android:name=".TestBroadcast">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
     </application>
     <uses-permission android:name="android.permission.CAMERA" />
 
