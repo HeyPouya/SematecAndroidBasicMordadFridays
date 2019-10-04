@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sematec.sematecandroidbasicmordadfridays">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,18 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestShapeActivity">
+        <activity android:name=".TestViewPagerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".TestWebViewActivity">
+        <activity android:name=".TestFragmentActivity">
         </activity>
-        <activity android:name=".TestShowDialogActivity"></activity>
+        <activity android:name=".TestNotificationActivity"></activity>
+        <activity android:name=".TestCustomViewActivity" />
+        <activity android:name=".TestShapeActivity" />
+        <activity android:name=".TestWebViewActivity" />
+        <activity android:name=".TestShowDialogActivity" />
         <activity
             android:name=".TestDialogActivity"
             android:theme="@style/Theme.AppCompat.Light.Dialog" />
@@ -49,9 +55,8 @@
                 <action android:name="android.intent.action.AIRPLANE_MODE" />
             </intent-filter>
         </receiver>
-    </application>
-    <uses-permission android:name="android.permission.CAMERA" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
+        <service android:name=".TestService" />
+    </application>
 
 </manifest>
